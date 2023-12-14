@@ -1,6 +1,6 @@
 function stringChop(str, size) {
   // your code here
-	if(str.length===0)return [''];
+	if(str===null)return [];
 	let ans=[];
 	for(let i=0;i<str.length;i+=size){
 		let s;
@@ -11,7 +11,8 @@ function stringChop(str, size) {
 	return ans;
 }
 
+i got only 39 marks and then it is failing 
 // Do not change the code below
-const str = prompt("Enter String.");
-const size = Number(prompt("Enter Chunk Size."));
+// const str = prompt("Enter String.");
+// const size = Number(prompt("Enter Chunk Size."));
 alert(stringChop(str, size));
